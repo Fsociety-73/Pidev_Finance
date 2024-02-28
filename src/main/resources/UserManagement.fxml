@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="usercin" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="729.0" prefWidth="1571.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.controllers.UserManagementController">
+   <children>
+      <TextField fx:id="empIdText" layoutX="320.0" layoutY="35.0" prefHeight="31.0" prefWidth="165.0" promptText="user CIN" />
+      <Button fx:id="searchEmpBtn" layoutX="320.0" layoutY="70.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="146.0" text="Search" />
+      <Button fx:id="deleteuser" layoutX="21.0" layoutY="537.0" mnemonicParsing="false"  prefHeight="31.0" prefWidth="260.0" text="Delete" />
+      <Button fx:id="updateuser" layoutX="21.0" layoutY="489.0" mnemonicParsing="false"  prefHeight="31.0" prefWidth="260.0" text="Update" />
+      <Button fx:id="adduser" layoutX="21.0" layoutY="443.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="260.0" text="Add Employee" />
+      <TextArea fx:id="resultArea" layoutX="20.0" layoutY="609.0" prefHeight="85.0" prefWidth="281.0" wrapText="true" />
+      <Label layoutX="20.0" layoutY="578.0" prefHeight="17.0" prefWidth="131.0" text="Result Console">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <VBox layoutX="142.0" layoutY="28.0" prefHeight="379.0" prefWidth="155.0" spacing="4.0">
+         <children>
+            <TextField fx:id="username" prefHeight="31.0" prefWidth="155.0" promptText="username" />
+            <TextField fx:id="firstname" prefHeight="25.0" prefWidth="79.0" promptText="firstname" />
+            <TextField fx:id="lastname" prefHeight="25.0" prefWidth="79.0" promptText="Lastname" />
+            <TextField fx:id="email" prefHeight="31.0" prefWidth="155.0" promptText="Email" />
+            <TextField fx:id="cin" prefHeight="31.0" prefWidth="155.0" promptText="Cin" />
+            <PasswordField fx:id="password" promptText="Password" />
+            <TextField fx:id="city" prefHeight="31.0" prefWidth="155.0" promptText="City" />
+            <TextField fx:id="zip" prefHeight="31.0" prefWidth="155.0" promptText="zip" />
+            <TextField fx:id="phone" prefHeight="31.0" prefWidth="155.0" promptText="phone" />
+            <ComboBox fx:id="role" prefHeight="43.0" prefWidth="251.0" promptText="Role" />
+            <DatePicker fx:id="dateofbirth" prefHeight="43.0" prefWidth="244.0" promptText="Date Of Birth" />
+         </children>
+      </VBox>
+      <VBox layoutX="9.0" layoutY="28.0" prefHeight="343.0" prefWidth="117.0" spacing="12.0">
+         <children>
+            <Label text="Username" />
+            <Label text="Firstname" />
+            <Label text="Lastname" />
+            <Label text="Email" />
+            <Label text="CIN" />
+            <Label text="Password" />
+            <Label text="City" />
+            <Label text="Code Zip" />
+            <Label text="Phone" />
+            <Label prefHeight="21.0" prefWidth="105.0" text="Role" />
+            <Label prefHeight="67.0" prefWidth="105.0" text="Date Of Birth" />
+         </children>
+      </VBox>
+      <Separator layoutY="9.0" prefHeight="9.0" prefWidth="1391.0" />
+      <Separator layoutX="312.0" layoutY="21.0" orientation="VERTICAL" prefHeight="333.0" prefWidth="7.0" />
+      <TableView fx:id="employeeTable" editable="true" layoutX="319.0" layoutY="116.0" prefHeight="452.0" prefWidth="1208.0" tableMenuButtonVisible="true">
+        <columns>
+            <TableColumn fx:id="empIdColumn" prefWidth="57.0" text="ID" />
+            <TableColumn fx:id="empNameColumn2" prefWidth="109.0" text="Cin" />
+          <TableColumn fx:id="userfirstname" prefWidth="109.0" text="Username" />
+          <TableColumn fx:id="empLastNameColumn" prefWidth="111.0" text="Firstname" />
+            <TableColumn fx:id="empEmailColumn" prefWidth="93.0" text="Lastname" />
+            <TableColumn fx:id="empPhoneNumberColumn" prefWidth="137.0" text="Email" />
+            <TableColumn fx:id="empHireDateColumn" prefWidth="101.0" text="City" />
+            <TableColumn fx:id="empNameColumn1" prefWidth="109.0" text="Zip" />
+            <TableColumn fx:id="empNameColumn3" prefWidth="109.0" text="Phone" />
+            <TableColumn fx:id="empNameColumn31" prefWidth="109.0" text="Role" />
+            <TableColumn fx:id="empNameColumn32" prefWidth="136.0" text="date of birth" />
+        </columns>
+      </TableView>
+      <Button fx:id="searchEmpsBtn" layoutX="893.0" layoutY="70.0" mnemonicParsing="false"  prefHeight="31.0" prefWidth="281.0" text=" Display All Users " />
+   </children>
+</AnchorPane>

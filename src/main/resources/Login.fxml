@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox id="Vbox" alignment="CENTER_LEFT" prefHeight="431.0" prefWidth="480.0" spacing="20.0" styleClass="white-pane"  xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.controllers.LoginController">
+   <children>
+      <HBox prefHeight="45.0" prefWidth="450.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="112.0" prefWidth="450.0" text="Login" textFill="#1ae450">
+               <font>
+                  <Font name="Argentum Sans Regular" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="43.0" prefWidth="480.0">
+         <children>
+            <TextField fx:id="email" prefHeight="43.0" prefWidth="480.0" promptText="Email" />
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="229.0" prefHeight="43.0" prefWidth="480.0">
+         <children>
+            <PasswordField fx:id="password" prefHeight="64.0" prefWidth="450.0" promptText="Password" />
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="250.0" prefHeight="43.0" prefWidth="480.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#Loginclicked" prefHeight="49.0" prefWidth="480.0" text="Login" />
+         </children>
+      </HBox>
+      <HBox prefHeight="55.0" prefWidth="450.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="39.0" prefWidth="326.0" text="Don't have an account ?" textFill="#270ae8" />
+            <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="102.0" text="Sign up" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets left="15.0" right="15.0" top="20.0" />
+   </padding>
+</VBox>
